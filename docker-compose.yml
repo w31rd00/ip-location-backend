@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:latest
+    container_name: ip_location
+    environment:
+      POSTGRES_USER: ip_user
+      POSTGRES_PASSWORD: ip_password
+      POSTGRES_DB: ip_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ip_db_data:/var/lib/postgresql/data
+
+volumes:
+  ip_db_data:
