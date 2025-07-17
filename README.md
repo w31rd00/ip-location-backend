@@ -31,25 +31,25 @@ Before running the application, make sure you have the following installed:
 ```bash
 git clone https://github.com/w31rd00/ip-location-backend.git
 
-cd ip-locaton-backend
+cd ip-location-backend
 ```
-### 2. Setup the database
+### 🐳 2. Setup the database
 You can run **docker compose up -d**, which will automatically create docker container 
 with postgresql latest image, currently credentials like postgres credentials, are hardcoded in **docker-compose.yml**
 file and can be changed. Alternatively you can configure **Postgresql** database locally, without docker, for the project.
 
-### 3. Configure Database Connection
+### ⚙️ 3. Configure Database Connection
 Make sure to configure ```src/main/resources/application.properties```
 file for the database configuration, currently project comes with filled ```application.properties```
 with hardcoded values for the database credentials, which matches the credentials in
 ```docker-compose.yml``` file.
 
-### 4. Build the Application
+### 🛠️ 4. Build the Application
 ```bash
 ./gradlew clean build
 ```
 
-### 5. Run the Application
+### ▶️ 5. Run the Application
 
 #### Option 1: Run directly with Gradle
 ```bash
@@ -60,7 +60,7 @@ with hardcoded values for the database credentials, which matches the credential
 java -jar build/libs/ip-0.0.1-SNAPSHOT.jar
 ```
 
-### 6. Run Tests
+### 🧪 6. Run Tests
 ```bash
 ./gradlew test
 ```
